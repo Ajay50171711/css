@@ -1,0 +1,59 @@
+1. background-color
+background-color: color;
+Color can be:
+Named colors (red, blue, green, etc.)
+HEX codes (#ff0000, #00ff00, etc.)
+RGB values (rgb(255, 0, 0))
+HSL values (hsl(0, 100%, 50%))
+
+2. background-image
+
+Syntax:
+background-image: url('image.jpg');
+
+Example:
+background-image: url('background.png');
+
+3. background-repeat
+Definition: Controls how the background image is repeated.
+
+Values:
+repeat (default): The image repeats both horizontally and vertically.
+repeat-x: Repeats only horizontally.
+repeat-y: Repeats only vertically.
+no-repeat: No repetition.
+
+Example:
+background-repeat: no-repeat;
+
+4. background-position
+Definition: Specifies the position of the background image.
+
+Syntax:
+background-position: x y;
+Common values: left, right, top, bottom, center.
+You can also use percentages or lengths (e.g., 50% 50% or 10px 20px).
+Example:
+background-position: center center;
+
+
+5. background-size
+Definition: Sets the size of the background image.
+Values:
+auto: Keeps the image’s original size.
+cover: Scales the image to cover the entire element.
+contain: Scales the image to fit inside the element.
+Custom size: Specify width and height (100px 200px).
+Example:
+background-size: cover;
+
+
+6. background-attachment
+Definition: Controls whether the background image scrolls with the page or is fixed.
+Values:
+scroll (default): The background moves with the element.
+fixed: The background stays fixed, even when scrolling.
+local: The background scrolls with the content of the element.
+Example:
+background-attachment: fixed;
+
