@@ -1,0 +1,10 @@
+  <script>
+    document.querySelectorAll('a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault(); // Prevent default behavior
+        const targetId = this.getAttribute('href').slice(1); // Get target section ID
+        const targetSection = document.getElementById(targetId);
+        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  </script>
